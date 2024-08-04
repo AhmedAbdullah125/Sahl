@@ -72,6 +72,20 @@ const Categories: React.FC<IProps> = ({ categories }) => {
               modules={[Autoplay, Pagination]}
               pagination={{ clickable: true }}
               navigation={true}
+              breakpoints={{
+                991: {
+                    slidesPerView: 8,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                540: {
+                    slidesPerView: 2,
+                },
+                100: {
+                    slidesPerView: 1,
+                },
+            }}
             >
 
               <SwiperSlide >
