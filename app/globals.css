@@ -1653,7 +1653,26 @@ header {
     grid-template-columns: repeat(9, 1fr);
     gap: 20px;
   }
-
+  @media (max-width: 1200px) {
+    .sub-cat-cont{
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  @media (max-width: 991px) {
+    .sub-cat-cont{
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: 550px) {
+    .sub-cat-cont{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 430px) {
+    .sub-cat-cont{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
   .card{
     background-color: #f7f8fa;
     box-shadow:none;
