@@ -52,7 +52,7 @@ const Ads = async ({ params, searchParams }: IParams) => {
     <>
     <Header/>
     <div className="bg pb-4">
-      <div className="container mx-auto px-4 min-h-screen">
+      <div className="container mx-auto px-4">
         
         <Title
           links={[

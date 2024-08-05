@@ -42,7 +42,7 @@ const Ad = async ({ params }: IParams) => {
     <Header/>
     <div className="bg">
       
-      <div className="container mx-auto px-4 min-h-screen">
+      <div className="container mx-auto px-4">
         <Title
           links={[
             { title: "الاقسام", path: paths.home },

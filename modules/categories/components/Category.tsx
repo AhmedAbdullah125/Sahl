@@ -24,9 +24,9 @@ const Category: React.FC<IProps> = ({
   return (
     <>
     
-      <div className="py-3">
+      <div className="sub-cat">
         {/* <h2 className="text-center text-primary  text-3xl">{category.title}</h2> */}
-        <div className="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mt-4">
+        <div className="sub-cat-cont">
           {category.subCategoryList.map((subCategory) => (
             <Link
               href={paths.getAds(
@@ -39,7 +39,7 @@ const Category: React.FC<IProps> = ({
               key={subCategory.id}
               className="flex flex-col items-center"
             >
-              <div className="card rounded-full  overflow-hidden max-h-32 max-w-32 h-32 w-32 sm:max-h-40 sm:max-w-40 sm:h-40 sm:w-40 flex items-center justify-center">
+              <div className="card">
                 <Image
                   src={subCategory.image}
                   width="0"
@@ -50,7 +50,7 @@ const Category: React.FC<IProps> = ({
                 />
               </div>
               {/* <p className="huge">ddddddddddddddddddddddddddddddddd</p> */}
-              <h3 className="text-center text-black mt-3 md:text-xl text-md">
+              <h3 className="t-title">
                 {subCategory.title}
               </h3>
             </Link>

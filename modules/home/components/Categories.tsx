@@ -77,13 +77,13 @@ const Categories: React.FC<IProps> = ({ categories }) => {
                     slidesPerView: 8,
                 },
                 768: {
-                    slidesPerView: 3,
+                    slidesPerView: 6,
                 },
                 540: {
-                    slidesPerView: 2,
+                    slidesPerView: 4,
                 },
                 100: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                 },
             }}
             >

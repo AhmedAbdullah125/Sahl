@@ -1645,3 +1645,30 @@ header {
 }
 
 /*                                  category slider                    */
+
+.sub-cat{
+  margin-bottom:60px;
+  .sub-cat-cont{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 20px;
+  }
+
+  .card{
+    background-color: #f7f8fa;
+    box-shadow:none;
+    border:none;
+    
+  }
+  .t-title{
+    font-size:18px;
+    font-weight:600;
+    text-align: center;
+  }
+}
+.page-name{
+  font-size: 30px;
+  font-weight:500;
+  color:var(--main-color);
+  margin: 20px 0;
+}

@@ -32,7 +32,7 @@ const Title: React.FC<IProps> = ({ links }) => {
           )}
       </div>
 
-      <h1 className="text-center text-primary text-3xl font-bold py-4">
+      <h1 className="page-name">
         {links[index].title}
       </h1>
     </div>

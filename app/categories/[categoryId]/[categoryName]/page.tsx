@@ -29,7 +29,7 @@ const Categories = async ({ params }: IParams) => {
   return (
     <div className="bg">
       <Header/>
-      <div className="container mx-auto px-4 min-h-screen">
+      <div className="container mx-auto px-4 ">
         <Title links={[{ title: "الاقسام", path: paths.home }, { title }]} />
         {data.categories.map((category) => (
           <Category
