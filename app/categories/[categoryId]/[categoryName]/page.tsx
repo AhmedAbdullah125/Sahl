@@ -3,7 +3,10 @@ import { Data } from "@/modules/categories/types";
 import Category from "@/modules/categories/components/Category";
 import { paths } from "@/routes/paths";
 import Title from "@/shared/components/Title";
+
 import { Metadata } from "next";
+import Header from "@/modules/home/components/Header";
+import Footer from "@/modules/home/components/Footer";
 
 interface IParams {
   params: { categoryId: number; categoryName: string };
@@ -25,6 +28,7 @@ const Categories = async ({ params }: IParams) => {
 
   return (
     <div className="bg">
+      <Header/>
       <div className="container mx-auto px-4 min-h-screen">
         <Title links={[{ title: "الاقسام", path: paths.home }, { title }]} />
         {data.categories.map((category) => (
@@ -36,6 +40,7 @@ const Categories = async ({ params }: IParams) => {
           />
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };

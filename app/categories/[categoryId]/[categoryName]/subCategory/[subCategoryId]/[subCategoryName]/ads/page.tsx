@@ -8,6 +8,8 @@ import Title from "@/shared/components/Title";
 import { paths } from "@/routes/paths";
 import { Metadata } from "next";
 import DateFilter from "@/modules/ads/components/DateFilter";
+import Header from "@/modules/home/components/Header";
+import Footer from "@/modules/home/components/Footer";
 
 interface IParams {
   params: {
@@ -47,8 +49,11 @@ const Ads = async ({ params, searchParams }: IParams) => {
   const title = decodeURIComponent(params.subCategoryName);
   const categoryTitle = decodeURIComponent(params.categoryName);
   return (
+    <>
+    <Header/>
     <div className="bg pb-4">
       <div className="container mx-auto px-4 min-h-screen">
+        
         <Title
           links={[
             { title: "الاقسام", path: paths.home },
@@ -104,6 +109,8 @@ const Ads = async ({ params, searchParams }: IParams) => {
         )}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

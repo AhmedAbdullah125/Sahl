@@ -13,6 +13,8 @@ const Title: React.FC<IProps> = ({ links }) => {
   const index = links.length - 1;
 
   return (
+    <>
+    
     <div className="py-3">
       <div className="flex flex-wrap">
         {links.length > 1 &&
@@ -34,6 +36,7 @@ const Title: React.FC<IProps> = ({ links }) => {
         {links[index].title}
       </h1>
     </div>
+    </>
   );
 };
 

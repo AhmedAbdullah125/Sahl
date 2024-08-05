@@ -222,7 +222,7 @@ const Categories: React.FC<IProps> = ({ categories }) => {
           </div>
         </div>
       </section>
-      <div className='sahl-footer'>
+      {/* <div className='sahl-footer'>
         <div className="container footer-cont">
           <div className='sahl-info'>
             <img src="https://sahl.sa/wp-content/uploads/2023/10/logo.png" alt="logo" />
@@ -266,7 +266,7 @@ const Categories: React.FC<IProps> = ({ categories }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

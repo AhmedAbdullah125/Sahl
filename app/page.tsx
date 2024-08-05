@@ -15,8 +15,9 @@ const Home = async () => {
   
   
   return (
+    <>
+    <Header/>
     <div className="bg">
-      <Header/>
       <div 
       className="container mx-auto px-4 h-screen"
       >
@@ -32,6 +33,7 @@ const Home = async () => {
         
       </div>
     </div>
+    </>
   );
 };
 

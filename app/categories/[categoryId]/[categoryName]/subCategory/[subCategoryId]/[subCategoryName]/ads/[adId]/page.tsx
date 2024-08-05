@@ -9,6 +9,8 @@ import { Metadata } from "next";
 import { removeCountryCode } from "@/shared/utils/removeCountryCode";
 import { adjustPrice } from "@/shared/utils/adjustPrice";
 import { removeZeros } from "@/shared/utils/removeZeros";
+import Header from "@/modules/home/components/Header";
+import Footer from "@/modules/home/components/Footer";
 
 interface IParams {
   params: {
@@ -36,7 +38,10 @@ const Ad = async ({ params }: IParams) => {
   const subCategoryTitle = decodeURIComponent(params.subCategoryName);
 
   return (
+    <>
+    <Header/>
     <div className="bg">
+      
       <div className="container mx-auto px-4 min-h-screen">
         <Title
           links={[
@@ -86,6 +91,8 @@ const Ad = async ({ params }: IParams) => {
         </div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
