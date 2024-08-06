@@ -1752,6 +1752,21 @@ header {
   gap:24px;
   margin-top:50px;
 }
+@media (max-width: 991px) {
+  .grid-card-cont{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+@media (max-width: 767px) {
+  .grid-card-cont{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+@media (max-width: 400px) {
+  .grid-card-cont{
+    grid-template-columns:repeat(1,1fr);
+  }
+}
 .store-cat{
   .swiper-slide{
     /* margin-left:0 !important; */
