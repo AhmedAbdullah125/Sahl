@@ -2,6 +2,7 @@ import React from 'react'
 // import profile from '../../assets/profile-1.png'
 import logo from '../../assets/sahl.png'
 import Link from 'next/link'
+import SearchInput from '@/shared/components/SearchInput'
 export default function HeaderContainer() {
     function openNav() {
         document.getElementById('navgition').classList.add('reset-left')
@@ -23,14 +24,7 @@ export default function HeaderContainer() {
 
                     <div className="search-cont">
 
-                        <div className="search-section">
-                            <form className="search-form">
-                                <input className="search-input" type="text" name="" placeholder="ابحث..." />
-                                <button className="search-button">
-                                    <i className="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                            </form>
-                        </div>
+                        <SearchInput/>
                     </div>
 
                     <div className="navgition" id='navgition'>

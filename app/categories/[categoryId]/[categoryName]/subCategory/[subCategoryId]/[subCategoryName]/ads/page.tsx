@@ -78,7 +78,7 @@ const Ads = async ({ params, searchParams }: IParams) => {
           </div>
         ) : (
           <>
-            <div className="grid gap-3 grid-cols-2 lg:grid-cols-6 mt-3">
+            <div className="grid-card-cont">
               {data.fixed_ads.map((ad) => (
                 <AdCard
                   isPinned

@@ -42,7 +42,7 @@ const Pagination: React.FC<IProps> = ({ pages, selectedPage }) => {
   return (
     <nav
       aria-label="Page navigation"
-      className="flex justify-center rounded-md"
+      className="flex justify-center rounded-md mt-3"
     >
       <ul className="inline-flex -space-x-px text-sm">
         {Array.from(
@@ -54,13 +54,13 @@ const Pagination: React.FC<IProps> = ({ pages, selectedPage }) => {
               style={{ cursor: "pointer" }}
               onClick={() => handleClick(page)}
               className={`flex items-center justify-center ${
-                index === 0 ? "rounded-tr-lg rounded-br-lg" : ""
+                index === 0 ? "rounded-lg" : ""
               } ${
                 index === endPage - startPage
                   ? "rounded-tl-lg rounded-bl-lg"
                   : ""
               } px-3 h-8 leading-tight ${
-                page == currentPage ? "bg-primary" : "bg-white"
+                page == currentPage ? "bg-primary text-white " : "bg-white"
               } text-black hover:bg-primary`}
             >
               {page}

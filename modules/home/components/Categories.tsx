@@ -64,157 +64,210 @@ const Categories: React.FC<IProps> = ({ categories }) => {
       <section className="category-section store-cat">
         <div className="container">
           <div className="category-slider">
-          <h2 className="h2-title">نماذج <span>الاعلانات</span></h2>
+            <h2 className="h2-title">نماذج <span>الاعلانات</span></h2>
             <Swiper
-              spaceBetween={50}
-              slidesPerView={8}
+              spaceBetween={20}
+              slidesPerView={6}
               autoplay={{ delay: 5000 }}
               modules={[Autoplay, Pagination]}
               pagination={{ clickable: true }}
               navigation={true}
               breakpoints={{
                 991: {
-                    slidesPerView: 8,
+                  slidesPerView: 6,
                 },
                 768: {
-                    slidesPerView: 6,
+                  slidesPerView: 5,
                 },
                 540: {
-                    slidesPerView: 4,
+                  slidesPerView: 3,
                 },
                 100: {
-                    slidesPerView: 2,
+                  slidesPerView: 2,
                 },
-            }}
+              }}
             >
 
+              
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/2/محركات/subCategory/42/سيارات%20للبيع/ads" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://www.usnews.com/cmsmedia/f5/4b/efa92f4c4dcebb2af996dfc4c01f/2023-lucid-air-1.jpg" />
-                    </figure>
-                    <span>سياره ماكلارين </span>
+                <div className="card-cont">
+                  <Link href= "/categories/2/محركات/subCategory/42/سيارات%20للبيع/ads">
+                    <div className="card-img">
+                      <img src="https://www.usnews.com/cmsmedia/f5/4b/efa92f4c4dcebb2af996dfc4c01f/2023-lucid-air-1.jpg" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">امريكى</h4>
+                      <h3 className="card-title">سياره ماكلارين  سياره ماكلارين   سياره ماكلارين </h3>
+                      <h3 className="card-price">2300 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/2/محركات/subCategory/42/سيارات%20للبيع/ads" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80" />
-                    </figure>
-                    <span>سياره سوزوكى</span>
+                <div className="card-cont">
+                  <Link href= "/categories/2/محركات/subCategory/42/سيارات%20للبيع/ads">
+                    <div className="card-img">
+                      <img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">امريكى</h4>
+                      <h3 className="card-title">سياره سوزوكى</h3>
+                      <h3 className="card-price">2300 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/2/محركات/subCategory/42/سيارات%20للبيع/ads" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/10076/1717586320303/front-left-side-47.jpg?impolicy=resize&imwidth=480" />
-                    </figure>
-                    <span>رينوووو</span>
+                <div className="card-cont">
+                  <Link href= "/categories/2/محركات/subCategory/42/سيارات%20للبيع/ads">
+                    <div className="card-img">
+                      <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Renault/KWID/10076/1717586320303/front-left-side-47.jpg?impolicy=resize&imwidth=480" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">امريكى</h4>
+                      <h3 className="card-title">رينوووو</h3>
+                      <h3 className="card-price">2300 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/1/عقارات/subCategory/1103/للبيع/ads" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://ibtkarre.com/wp-content/uploads/2023/06/%D8%A7%D9%81%D8%B6%D9%84-%D8%B4%D8%B1%D9%83%D8%A9-%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3.jpg" />
-                    </figure>
-                    <span>فيلا</span>
+                <div className="card-cont">
+                  <Link href= "/categories/1/عقارات/subCategory/1103/للبيع/ads">
+                    <div className="card-img">
+                      <img src="https://ibtkarre.com/wp-content/uploads/2023/06/%D8%A7%D9%81%D8%B6%D9%84-%D8%B4%D8%B1%D9%83%D8%A9-%D8%B9%D9%82%D8%A7%D8%B1%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3.jpg" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">عقارات</h4>
+                      <h3 className="card-title">فيلا</h3>
+                      <h3 className="card-price">23200 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
+                  </Link>
+                </div>
+              </SwiperSlide>
+              
+              <SwiperSlide >
+                <div className="card-cont">
+                  <Link href= "/categories/1/عقارات/subCategory/1103/للبيع/ads">
+                    <div className="card-img">
+                      <img src="https://vid.alarabiya.net/images/2017/11/29/a6903cc4-0628-4f4e-aca7-63e5989ee177/a6903cc4-0628-4f4e-aca7-63e5989ee177_16x9_1200x676.jpg?width=372&format=jpg" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">عقارات</h4>
+                      <h3 className="card-title">شقق</h3>
+                      <h3 className="card-price">23200 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/1/عقارات/subCategory/1103/للبيع/ads" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://vid.alarabiya.net/images/2017/11/29/a6903cc4-0628-4f4e-aca7-63e5989ee177/a6903cc4-0628-4f4e-aca7-63e5989ee177_16x9_1200x676.jpg?width=372&format=jpg" />
-                    </figure>
-                    <span>شقق</span>
+                <div className="card-cont">
+                  <Link href= "/categories/1/عقارات/subCategory/1103/للبيع/ads">
+                    <div className="card-img">
+                      <img src="https://www.propertyfinder.eg/property/db44a9f5e589f73fe1e34022fa23bbbd/668/452/MODE/81ba8f/5661484-23d35o.jpg?ctr=eg" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">عقارات</h4>
+                      <h3 className="card-title">بيت</h3>
+                      <h3 className="card-price">23200 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/1/عقارات/subCategory/1103/للبيع/ads" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://www.propertyfinder.eg/property/db44a9f5e589f73fe1e34022fa23bbbd/668/452/MODE/81ba8f/5661484-23d35o.jpg?ctr=eg" />
-                    </figure>
-                    <span>بيت</span>
+                <div className="card-cont">
+                  <Link href= "/categories/11/الكترونيات">
+                    <div className="card-img">
+                      <img src="https://hnsgsfp.imgix.net/9/images/detailed/98/New_Surface_Laptop_Go_3_FRONT.jpg?fit=fill&bg=0FFF&w=1536&h=900&auto=format,compress" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">الكرونيات</h4>
+                      <h3 className="card-title">laptop</h3>
+                      <h3 className="card-price">230 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
+                  </Link>
+                </div>
+              </SwiperSlide>
+             
+              <SwiperSlide >
+                <div className="card-cont">
+                  <Link href= "/categories/11/الكترونيات">
+                    <div className="card-img">
+                      <img src="https://cdn.mos.cms.futurecdn.net/LekCjjpyVoWeFAJwZ79Tzc-1200-80.jpg" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">الكرونيات</h4>
+                      <h3 className="card-title">laptop</h3>
+                      <h3 className="card-price">230 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/11/الكترونيات" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://m.media-amazon.com/images/I/314Rp+8XKWL._AC_SR300,300.jpg" />
-                    </figure>
-                    <span>ايفون</span>
+                <div className="card-cont">
+                  <Link href= "/categories/9/مقاولات%20وحرف">
+                    <div className="card-img">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2gKkNW4gEeyuH8R-bozNXCTO8rneGIotxjg&s" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">مقاولات وحرف</h4>
+                      <h3 className="card-title">سباك</h3>
+                      <h3 className="card-price">230 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/11/الكترونيات" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://hnsgsfp.imgix.net/9/images/detailed/98/New_Surface_Laptop_Go_3_FRONT.jpg?fit=fill&bg=0FFF&w=1536&h=900&auto=format,compress" />
-                    </figure>
-                    <span>laptop</span>
+                <div className="card-cont">
+                  <Link href= "/categories/12/وظائف">
+                    <div className="card-img">
+                      <img src="https://ongineering.com/images/jch-optimize/ng/images_Articles__Aziz_freelance__engineer.webp" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">وظائف</h4>
+                      <h3 className="card-title">مهندس</h3>
+                      <h3 className="card-price">230 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/11/الكترونيات" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://cdn.mos.cms.futurecdn.net/LekCjjpyVoWeFAJwZ79Tzc-1200-80.jpg" />
-                    </figure>
-                    <span>laptop</span>
+                <div className="card-cont">
+                  <Link href= "/categories/12/وظائف">
+                    <div className="card-img">
+                      <img src="https://cdn.altibbi.com/cdn/cache/1000x500/image/2020/03/17/9f40f119864f12b73a8d24a2f94ac454.png.webp" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">وظائف</h4>
+                      <h3 className="card-title">طبيب</h3>
+                      <h3 className="card-price">230 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
               <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/9/مقاولات%20وحرف" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2gKkNW4gEeyuH8R-bozNXCTO8rneGIotxjg&s" />
-                    </figure>
-                    <span>سباك</span>
-                  </Link>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/12/وظائف" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://ongineering.com/images/jch-optimize/ng/images_Articles__Aziz_freelance__engineer.webp" />
-                    </figure>
-                    <span>مهندس</span>
-                  </Link>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/12/وظائف" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://cdn.altibbi.com/cdn/cache/1000x500/image/2020/03/17/9f40f119864f12b73a8d24a2f94ac454.png.webp" />
-                    </figure>
-                    <span>طبيب</span>
-                  </Link>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide >
-                <div className="brand">
-                  <Link href="/categories/12/وظائف" className="category-ancor">
-                    <figure className="category-figure">
-                      <img className="category-img img-fluid" alt="image1" src="https://png.pngtree.com/png-clipart/20231006/original/pngtree-arabic-language-teacher-png-image_13127584.png" />
-                    </figure>
-                    <span>مدرس</span>
+                <div className="card-cont">
+                  <Link href= "/categories/12/وظائف">
+                    <div className="card-img">
+                      <img src="https://png.pngtree.com/png-clipart/20231006/original/pngtree-arabic-language-teacher-png-image_13127584.png" width="0" height="0" sizes="100vw" className="w-full object-cover max-h-40 h-40" />
+                    </div>
+                    <div className="card-text">
+                      <h4 className="card-name">وظائف</h4>
+                      <h3 className="card-title">مدرس</h3>
+                      <h3 className="card-price">230 دك</h3>
+                      {/* <p className="huge">dddd</p> */}
+                    </div>
                   </Link>
                 </div>
               </SwiperSlide>
