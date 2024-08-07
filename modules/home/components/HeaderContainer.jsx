@@ -1,77 +1,35 @@
-import React from 'react'
+import React from "react";
 // import profile from '../../assets/profile-1.png'
-import logo from '../../assets/sahl.png'
-import Link from 'next/link'
-import SearchInput from '@/shared/components/SearchInput'
+import logo from "../../assets/sahl.png";
+import AppleBtn from "../../assets/apple-btn.png";
+import GoogleBtn from "../../assets/google-btn.png";
+import Link from "next/link";
+import SearchInput from "@/shared/components/SearchInput";
 export default function HeaderContainer() {
-    function openNav() {
-        document.getElementById('navgition').classList.add('reset-left')
-    }
-    function closeNav() {
+ 
 
-        document.getElementById('navgition').classList.remove('reset-left')
-    }
-
-    return (
-        <div className="top-header">
-                <div className="container">
-                <div className="nav-header">
-                    <Link href="/" className="logo">
-                        <div className="logo-cont">
-                            <img src="https://sahl.sa/wp-content/uploads/2023/10/logo.png" alt="logo" />
-                        </div>
-                    </Link>
-
-                    <div className="search-cont">
-
-                        <SearchInput/>
-                    </div>
-
-                    <div className="navgition" id='navgition'>
-                        <div className="nav-head">
-                            <button className="close-menu" id='close-menu'
-                            //  onClick={closeNav}
-                            >
-                                <i className="iconsax" icon-name="x"></i>
-                            </button>
-                        </div>
-                        <ul className="big-menu list-unstyled">
-                            <li className="">
-                                <Link href="/login">
-                                    <i className="iconsax" icon-name="user-2"></i>
-                                    تسجيل الدخول
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/#stadium">
-                                    <i className="iconsax" icon-name="heart"></i>
-                                    انشاء حساب
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/cart" className='add-btn-nav'>
-                                    <i className="fa-solid fa-plus"></i>
-                                    أضف إعلانك
-                                </Link>
-                            </li>
-                            {/* <li className='hidden-in-lg'>
-                                <Link href="/about">
-                                    من نحن
-                                </Link>
-                            </li> */}
-
-                        </ul>
-                    </div>
-                    <div className="header-btn">
-                        <Link href="#11" className="about-a d-none">تسجيل</Link>
-                        <button className="menu-bars" id="menu-id"
-                            // onClick={openNav}
-                        >
-                            <i className="fa-solid fa-bars"></i>
-                        </button>
-                    </div>
-                </div>
+  return (
+    <div className="top-header">
+      <div className="container">
+        <div className="nav-header">
+          <Link href="/" className="logo">
+            <div className="logo-cont">
+              <img
+                src="https://sahl.sa/wp-content/uploads/2023/10/logo.png"
+                alt="logo"
+              />
             </div>
+          </Link>
+          <div className="download-btn-cont">
+            <a href="https://apps.apple.com/qa/app/sahl-sale-%D8%B3%D9%87%D9%84-%D8%B3%D9%8A%D9%84/id1638126545?platform=iphone">
+              <img src={AppleBtn.src} alt="download" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.raiyansoft.sahlsale&hl=en&gl=US&pli=1">
+              <img src={GoogleBtn.src} alt="download" />
+            </a>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }

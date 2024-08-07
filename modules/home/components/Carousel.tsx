@@ -1,9 +1,10 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import { Banner } from "../types";
 import Image from "next/image";
@@ -17,13 +18,14 @@ type IProps = {
 const Carousel: React.FC<IProps> = ({ banners }) => {
   
   return (
-    <>
+    <section className="banner-section">
       <Swiper
         spaceBetween={50}
         slidesPerView={1}
         autoplay={{ delay: 5000 }}
         modules={[Autoplay, Pagination]}
         pagination={{ clickable: true }}
+        navigation={true}
       >
         {banners.map((banner) => (
           <SwiperSlide key={banner.id} >
@@ -40,21 +42,8 @@ const Carousel: React.FC<IProps> = ({ banners }) => {
             </a>
           </SwiperSlide>
         ))}
-        <SwiperSlide>
-            <a href="google.com" target="_blank" className="swiper-img-cont">
-              <img
-                src="https://static.q84sale.com/images/hero_section/Tm3ZTHTDsh1j@original.png"
-                
-                // height="0"
-                // sizes="100vw"
-                className=""
-                // className="w-full sm:object-contain object-cover h-80"
-                alt="ad"
-              />
-            </a>
-          </SwiperSlide>
       </Swiper>
-    </>
+    </section>
   );
 };
 

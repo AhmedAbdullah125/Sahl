@@ -9,8 +9,6 @@ type IProps = {
 
 
 const SubCategories: React.FC<IProps> = ({ categories }) => {
-    console.log("tttttttttttttttt");
-    console.log(categories[3].subCategoryList);
 
     return (
         <div className="categories-cont">
