@@ -2143,6 +2143,7 @@ header {
   font-size: 20px;
   font-size: 16px;
   font-weight: 700;
+  z-index: 10;
 }
 .banner-section .swiper-button-prev::after,
 .banner-section .swiper-button-next::after,

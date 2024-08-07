@@ -23,7 +23,7 @@ const Carousel: React.FC<IProps> = ({ banners }) => {
         spaceBetween={50}
         slidesPerView={1}
         autoplay={{ delay: 5000 }}
-        modules={[Autoplay, Pagination]}
+        modules={[Navigation, Autoplay, Pagination]}
         pagination={{ clickable: true }}
         navigation={true}
       >
