@@ -9,13 +9,15 @@ type IProps = {
 };
 const LowerHeader: React.FC<IProps> = ({ categories }) => {
   // export default function LowerHeader() {
-    let subb = categories[0].subCategoryList;
+    // let subb = categories[0].subCategoryList;
+    console.log(categories);
+    
   return (
     <div className="lower-header">
       <div className="container">
         <div className="lower-header-cont">
           <div className="r-side">
-            {/* <a href="/">الصفحة الرئيسية</a>
+            <a href="/">الصفحة الرئيسية</a>
             <a href="/">خدماتنا</a>
             <a href="/">زيت سيارة</a>
             <a href="/">اكسسوارات</a>
@@ -25,18 +27,12 @@ const LowerHeader: React.FC<IProps> = ({ categories }) => {
             <a href="/">شواحن</a>
             <a href="/">تيل فرامل</a>
             <a href="/">تيل فرامل</a>
-            <a href="/">كباس يدوي</a> */}
-            {categories.map((category) => (
-              <Link
-                href={paths.getCategory(category.id, category.title)}
-                key={category.id}
-                className="category"
-              >
-                <h2 className="text-center text-primary mt-1">
-                  {category.title}
-                </h2>
+            <a href="/">كباس يدوي</a>
+            {/* {categories.map((category) => (
+              <Link href={paths.getCategory(category.id, category.title)} key={category.id} className="category" >
+                <h2 className="text-center text-primary mt-1"> {category.title} </h2>
               </Link>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

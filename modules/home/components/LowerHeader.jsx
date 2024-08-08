@@ -18,9 +18,7 @@ export default function LowerHeader() {
                         <a href='/'>تيل فرامل</a>
                         <a href='/'>كباس يدوي</a>
                     </div>
-                    <div className="l-side">
-                        
-                        
+                    <div className="l-side">                        
                     </div>
                 </div>
             </div>

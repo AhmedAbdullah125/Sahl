@@ -7,7 +7,8 @@ export default function Header() {
         <div className='header'>
             
                 <HeaderContainer></HeaderContainer>
-                {/* <LowerHeader></LowerHeader> */}
+                <LowerHeader></LowerHeader>
+                
         </div>
     )
 }
