@@ -2153,10 +2153,12 @@ header {
 }
 @media (max-width: 991px) {
   .banner-section .swiper-button-prev,
-  .banner-section .swiper-button-next {
+  .banner-section .swiper-button-next,
+  .store-cat .swiper-button-prev,
+  .store-cat .swiper-button-next {
     display: none;
   }
 }
-.explore-section{
+.explore-section {
   margin-bottom: 60px;
 }
